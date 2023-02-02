@@ -8,7 +8,7 @@ import styles, { layout } from '../style';
 const Home = () => (
   <div>
     <div className={`bg-transparent ${styles.flexStart} w-full h-[100vh]`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxWidth} mt-[30vh]`}>
         <Hero />
       </div>
     </div>

@@ -11,7 +11,7 @@ module.exports = {
         dimBlue: 'rgba(9, 151, 124, 0.1)',
         btnHoverGray: 'rgba(157, 157, 158)',
         btnGray: 'rgba(176, 176, 178)',
-        bgNavy: 'rgba(30, 41, 59)',
+        bgNavy: 'rgba(30, 41, 59, 0.6)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -27,6 +27,9 @@ module.exports = {
       gridTemplateColumns: {
         'min100': 'repeat(1, 100%)'
       },
+      fontFamily: {
+        'Solitreo': 'Solitreo',
+      }
     },
     screens: {
       xs: '480px',

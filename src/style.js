@@ -39,7 +39,7 @@ export const layout = {
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 
-  slickContainer: `px-8 ss:px-12 h-[48vh] flex items-center`,
+  slickContainer: `px-8 ss:px-12 h-[60vh] flex items-center justify-center`,
   navbarContainer: `absolute top-0 w-full`,
 };
 
