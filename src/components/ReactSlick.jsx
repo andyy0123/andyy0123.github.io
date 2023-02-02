@@ -61,7 +61,7 @@ const ReactSlick = () => {
           .map((photo, index) => (
             <div
               key={index}
-              className={`${randomOrientation ? styles.reactSlickVertical : ''}`}>
+              className={`${!isHorizontal ? styles.reactSlickVertical : ''}`}>
               <img
                 src={`${photo.src}`}
                 alt={`${photo.description}`}

@@ -2,26 +2,20 @@
 
 export const navLinks = [
   {
-    id: "home",
-    title: "Home",
+    id: 'home',
+    title: 'Home',
+    path: '/',
   },
   {
-    id: "info",
-    title: "Wedding Info",
-  },
-  {
-    id: "photos",
-    title: "Photos",
-  },
-  {
-    id: "form",
-    title: "Form",
+    id: 'form',
+    title: 'Form',
+    path: '/form',
   },
 ];
 
 export const ORIENTATION = {
-  horizontal: "horizontal",
-  vertical: "vertical",
+  horizontal: 'horizontal',
+  vertical: 'vertical',
 };
 
 // export const features = [
