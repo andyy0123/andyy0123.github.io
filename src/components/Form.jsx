@@ -87,7 +87,7 @@ const Form = () => {
               value={true}
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>是</label>
+            <label className='ml-3 block font-medium text-gray-700'>是</label>
           </div>
           <div className='flex items-center'>
             <input
@@ -99,7 +99,7 @@ const Form = () => {
               value={false}
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>否</label>
+            <label className='ml-3 block font-medium text-gray-700'>否</label>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ const Form = () => {
               value='paper'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>紙本喜帖</label>
+            <label className='ml-3 block font-medium text-gray-700'>紙本喜帖</label>
           </div>
           <div className='flex items-center'>
             <input
@@ -144,7 +144,7 @@ const Form = () => {
               value='elec'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>電子喜帖</label>
+            <label className='ml-3 block font-medium text-gray-700'>電子喜帖</label>
           </div>
           <div className='flex items-center'>
             <input
@@ -156,7 +156,7 @@ const Form = () => {
               value='both'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>我全都要</label>
+            <label className='ml-3 block font-medium text-gray-700'>我全都要</label>
           </div>
           <div className='flex items-center'>
             <input
@@ -168,7 +168,7 @@ const Form = () => {
               value='none'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>我不需要歐</label>
+            <label className='ml-3 block font-medium text-gray-700'>我不需要歐</label>
           </div>
         </div>
       </div>
@@ -305,7 +305,7 @@ const Form = () => {
               value={true}
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>需要</label>
+            <label className='ml-3 block font-medium text-gray-700'>需要</label>
           </div>
           <div className='flex items-center'>
             <input
@@ -315,7 +315,7 @@ const Form = () => {
               value={false}
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block text-sm font-medium text-gray-700'>自行前往</label>
+            <label className='ml-3 block font-medium text-gray-700'>自行前往</label>
           </div>
         </div>
       </div>
@@ -370,7 +370,7 @@ const Form = () => {
       <div className='bg-gray-50 px-4 py-3 text-right sm:px-6'>
         <input
           type='submit'
-          className={`inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm ${
+          className={`inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 font-medium text-white shadow-sm ${
             !isDisabledSubmit
               ? 'hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 cursor-pointer'
               : 'cursor-not-allowed'
@@ -387,11 +387,11 @@ const Form = () => {
         <button
           disabled
           type='button'
-          className='py-2.5 px-5 mr-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center'>
+          className='py-2.5 px-5 mr-2 font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-700 focus:text-blue-700 inline-flex items-center'>
           <svg
             aria-hidden='true'
             role='status'
-            className='inline w-4 h-4 mr-2 text-gray-200 animate-spin dark:text-gray-600'
+            className='inline w-4 h-4 mr-2 text-gray-200 animate-spin'
             viewBox='0 0 100 101'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'>
