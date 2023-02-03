@@ -260,6 +260,7 @@ const Form = () => {
           <option value='14'>14</option>
           <option value='15'>15</option>
         </select>
+        <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>含兒童人數</p>
       </div>
     );
   };
@@ -302,22 +303,33 @@ const Form = () => {
               {...register('shuttleBus')}
               type='radio'
               id='shuttle-bus'
-              value={true}
+              value='no'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block font-medium text-gray-700'>需要</label>
+            <label className='ml-3 block font-medium text-gray-700'>不需要，自行前往</label>
           </div>
           <div className='flex items-center'>
             <input
               {...register('shuttleBus')}
               type='radio'
               id='shuttle-bus'
-              value={false}
+              value='taipei'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
-            <label className='ml-3 block font-medium text-gray-700'>自行前往</label>
+            <label className='ml-3 block font-medium text-gray-700'>需要，台北 &lt;-&gt; 宴會場地</label>
+          </div>
+          <div className='flex items-center'>
+            <input
+              {...register('shuttleBus')}
+              type='radio'
+              id='shuttle-bus'
+              value='taichung'
+              className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
+            />
+            <label className='ml-3 block font-medium text-gray-700'>需要，台中高鐵站 &lt;-&gt; 宴會場地</label>
           </div>
         </div>
+        <div className='mt-4 text-sm text-gray-500 dark:text-gray-400'>若有變更，會另行通知。</div>
       </div>
     );
   };
@@ -416,7 +428,7 @@ const Form = () => {
       className='w-full h-fit text-white'>
       <div
         id='formContainer'
-        className={`py-8 sm:px-8 bg-bgNavy`}>
+        className={`pt-8 sm:px-8 bg-white`}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='shadow-2xl w-full md:w-[60vh] mx-auto'>
             <div className='bg-white p-5 sm:p-6'>

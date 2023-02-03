@@ -1,11 +1,10 @@
-import { Navbar, Home, Form } from './components/index';
-
-import styles, { layout } from './style';
+import { Home, Form, Info } from './components/index';
 
 const App = () => (
-  <div className='bg-white opacity-60 w-full'>
-    <Home/>
-    <Form/>
+  <div className='w-full'>
+    <Home />
+    <Info />
+    <Form />
   </div>
 );
 

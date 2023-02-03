@@ -12,6 +12,7 @@ module.exports = {
         btnHoverGray: 'rgba(157, 157, 158)',
         btnGray: 'rgba(176, 176, 178)',
         bgNavy: 'rgba(30, 41, 59, 0.6)',
+        bgWhite: 'rgba(248, 248, 248)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -25,11 +26,11 @@ module.exports = {
         'neg-inf': '-9999px',
       },
       gridTemplateColumns: {
-        'min100': 'repeat(1, 100%)'
+        min100: 'repeat(1, 100%)',
       },
       fontFamily: {
-        'Solitreo': 'Solitreo',
-      }
+        Solitreo: 'Solitreo',
+      },
     },
     screens: {
       xs: '480px',

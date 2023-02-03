@@ -14,7 +14,11 @@ export const SlickArrow = props => {
       style={{ ...style }}
       onClick={onClick}>
       <div
-        className={`${styles.flexCenter} w-[24px] h-[24px] ss:w-[40px] ss:h-[40px] lg:w-[52px] lg:h-[52px] rounded-full bg-btnGray hover:bg-btnHoverGray`}>
+        className={`${
+          styles.flexCenter
+        } w-[24px] h-[24px] ss:w-[40px] ss:h-[40px] lg:w-[52px] lg:h-[52px] rounded-full bg-btnGray hover:bg-btnHoverGray ${
+          right ? 'cursor-e-resize' : 'cursor-w-resize'
+        }`}>
         <FontAwesomeIcon
           icon={`fa-solid ${right ? 'fa-chevron-right' : 'fa-chevron-left'} fa-xs ss:fa-sm lg:fa-lg`}
           color={'white'}

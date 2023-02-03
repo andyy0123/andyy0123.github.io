@@ -9,7 +9,7 @@ const styles = {
   flexEnd: 'flex justify-center items-end',
 
   paddingX: 'sm:px-16 px-6',
-  paddingY: 'sm:py-16 py-6',
+  paddingY: 'py-[20vh]',
   padding: 'sm:px-16 px-6 sm:py-12 py-4',
 
   marginX: 'sm:mx-16 mx-6',
@@ -17,17 +17,20 @@ const styles = {
 
   logoSize: 'w-[36px] h-[36px] ss:w-[48px] ss:h-[48px] md:w-[64px] md:h-[64px]',
 
-  bgSettings: 'absolute top-0 right-0 left-0 bottom-0 -z-40 bg-center bg-cover brightness-50',
+  bgSettings: 'absolute top-0 right-0 left-0 bottom-0 -z-40 bg-center bg-cover brightness-60 opacity-60',
   reactSlickVertical: 'p-5',
   reactSlickSettings: 'w-80',
 
   slickArrow: 'block absolute w-24px h-24px p-0 cursor-pointer top-[calc(50%_-_24px)]',
   slickImg: 'max-h-80 mx-auto',
 
-  textInput: 'bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full mt-4 p-2.5',
-  selectList: 'block my-4 py-2.5 px-2 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer',
+  textInput:
+    'bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full mt-4 p-2.5',
+  selectList:
+    'block my-4 py-2.5 px-2 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer',
   question: 'block mb-2 text-base font-medium text-gray-900',
-  textarea: 'block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500',
+  textarea:
+    'block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500',
 };
 
 export const layout = {
@@ -39,7 +42,7 @@ export const layout = {
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 
-  slickContainer: `px-8 ss:px-12 h-[60vh] flex items-center justify-center`,
+  slickContainer: `px-8 ss:px-12 h-[480px] flex items-center justify-center`,
   navbarContainer: `absolute top-0 w-full`,
 };
 
