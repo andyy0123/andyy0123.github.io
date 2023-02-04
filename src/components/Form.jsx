@@ -303,7 +303,7 @@ const Form = () => {
               {...register('shuttleBus')}
               type='radio'
               id='shuttle-bus'
-              value='no'
+              value='false'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
             <label className='ml-3 block font-medium text-gray-700'>不需要，自行前往</label>
@@ -313,23 +313,13 @@ const Form = () => {
               {...register('shuttleBus')}
               type='radio'
               id='shuttle-bus'
-              value='taipei'
+              value='true'
               className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
             />
             <label className='ml-3 block font-medium text-gray-700'>需要，台北 &lt;-&gt; 宴會場地</label>
           </div>
-          <div className='flex items-center'>
-            <input
-              {...register('shuttleBus')}
-              type='radio'
-              id='shuttle-bus'
-              value='taichung'
-              className='h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500'
-            />
-            <label className='ml-3 block font-medium text-gray-700'>需要，台中高鐵站 &lt;-&gt; 宴會場地</label>
-          </div>
         </div>
-        <div className='mt-4 text-sm text-gray-500 dark:text-gray-400'>若有變更，會另行通知。</div>
+        <div className='mt-4 text-sm text-gray-500 dark:text-gray-400'>若人數過少而有變更，會另行通知。</div>
       </div>
     );
   };
