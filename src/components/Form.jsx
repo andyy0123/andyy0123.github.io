@@ -108,7 +108,7 @@ const Form = () => {
 
   const setBasicInfo = () => {
     const inputName = getValues('name');
-    if (inputName.length && getValues('joinWedding')) {
+    if (inputName.length && getValues('joinWedding') === "true") {
       setShowRestQuestions(true);
       setIsDisabledSubmit(false);
     } else {
