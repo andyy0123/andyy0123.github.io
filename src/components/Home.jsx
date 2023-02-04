@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from './Hero';
 import ReactSlick from './ReactSlick';
 
-import styles, { layout } from '../style';
+import styles from '../style';
 
 const Home = () => (
   <div>
@@ -12,7 +12,7 @@ const Home = () => (
         <Hero />
       </div>
     </div>
-    <div className={`bg-transparent ${layout.slickContainer} my-auto`}>
+    <div className={`bg-transparent ${styles.slickContainer} my-auto`}>
       <div className={`${styles.boxWidth}`}>
         <ReactSlick />
       </div>
