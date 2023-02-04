@@ -26,7 +26,7 @@ const Form = () => {
     setIsSubmitting(true);
 
     const url =
-      'https://script.google.com/macros/s/AKfycbzoHp6KtgOOJnEbNpwTIP30BZEknYRSujbPRFAnOKcR4zqlTtmqcfRvs2ZvCrNoF8HU/exec';
+      'https://script.google.com/macros/s/AKfycbwdSLJZS8YDRzrHxU7JrQh3ozxf7ROu5uIIQJQLyYhI9ZWGRUzgdt12q9v_5LWp6HA/exec';
     const reqOptions = {
       method: 'POST',
       body: JSON.stringify(data),
