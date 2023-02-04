@@ -1,15 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-// import { photosArr } from '../assets';
-// import { ORIENTATION } from '../constants';
-
 import styles from '../style';
 
 const Form = () => {
-  // const photos = photosArr.filter(photo => photo.orientation === ORIENTATION.vertical);
-  // const photo = photos[Math.floor(Math.random() * photos.length)];
-
   const { register, handleSubmit, getValues, reset } = useForm();
   const [showRestQuestions, setShowRestQuestions] = React.useState(false);
   const [showAddress, setShowAddress] = React.useState(false);
@@ -35,15 +29,19 @@ const Form = () => {
 
     try {
       const res = await fetch(`${url}`, reqOptions);
-      if (!res.ok) {
+      if (res.ok) {
         console.error('[RES NOT OK]', res);
+        alert('不好意思，沒有填寫成功，請您重新送出。再不行請您私訊我們 ^^');
+        reset();
+        setShowRestQuestions(false);
+        setShowAddress(false);
+        setShowEmail(false);
+        setShowNumOfChildren(true);
+        setIsDisabledSubmit(true);
+        setIsSubmitting(false);
         return;
       }
-      const doc = await res.json();
-      console.log('[RES]', doc);
-    } catch (err) {
-      console.error('[ERROR]', err);
-    } finally {
+      alert('填寫成功');
       reset();
       setShowRestQuestions(false);
       setShowAddress(false);
@@ -51,6 +49,8 @@ const Form = () => {
       setShowNumOfChildren(true);
       setIsDisabledSubmit(true);
       setIsSubmitting(false);
+    } catch (err) {
+      console.error('[ERROR]', err);
     }
   };
 
@@ -108,9 +108,9 @@ const Form = () => {
 
   const setBasicInfo = () => {
     const inputName = getValues('name');
-    if (inputName.length && getValues('joinWedding') === "true") {
-      setShowRestQuestions(true);
+    if (inputName.length && getValues('joinWedding')) {
       setIsDisabledSubmit(false);
+      setShowRestQuestions(getValues('joinWedding') === 'true');
     } else {
       setShowRestQuestions(false);
       setIsDisabledSubmit(true);
@@ -423,8 +423,8 @@ const Form = () => {
           <div className='shadow-2xl w-full md:w-[60vh] mx-auto'>
             <div className='bg-white p-5 sm:p-6'>
               <div className='grid grid-cols-min100 gap-6'>
-                <NameQ></NameQ>
-                <JoinWeddingQ></JoinWeddingQ>
+                <NameQ />
+                <JoinWeddingQ />
                 {showRestQuestions ? (
                   <>
                     <InvitationTypeQ></InvitationTypeQ>
