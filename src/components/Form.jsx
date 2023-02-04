@@ -29,7 +29,7 @@ const Form = () => {
 
     try {
       const res = await fetch(`${url}`, reqOptions);
-      if (res.ok) {
+      if (!res.ok) {
         console.error('[RES NOT OK]', res);
         alert('不好意思，沒有填寫成功，請您重新送出。再不行請您私訊我們 ^^');
         reset();
